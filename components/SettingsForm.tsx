@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ShopSettings, BluetoothDevice } from '../types';
-import { connectToBluetoothPrinter } from '../services/printerService';
 import { Bluetooth, Store, Printer, Wifi } from 'lucide-react';
 
 interface SettingsFormProps {

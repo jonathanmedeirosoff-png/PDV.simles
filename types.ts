@@ -47,3 +47,10 @@ export interface BluetoothRemoteGATTCharacteristic {
   writeValue(value: BufferSource): Promise<void>;
   writeValueWithoutResponse(value: BufferSource): Promise<void>;
 }
+
+// Fix for TypeScript not recognizing navigator.bluetooth
+declare global {
+  interface Navigator {
+    bluetooth: any;
+  }
+}

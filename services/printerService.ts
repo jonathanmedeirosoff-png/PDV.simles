@@ -1,9 +1,5 @@
 import { CartItem, ShopSettings, BluetoothDevice } from '../types';
 
-const ESC = '\x1B';
-const GS = '\x1D';
-const LF = '\x0A';
-
 // Helper to strip accents (simple ASCII fallback for basic printers)
 const removeAccents = (str: string) => {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
