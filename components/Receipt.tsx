@@ -92,7 +92,7 @@ export const Receipt: React.FC<ReceiptProps> = ({
       {/* Footer */}
       <div className="text-center mt-2">
         <p className="mb-2 italic break-words">{customFooter || settings.footerMessage || "Obrigado pela preferência!"}</p>
-        <p className="text-[10px]">EasyPOS Thermal</p>
+        <p className="text-[10px]">JPos Thermal</p>
       </div>
     </div>
   );

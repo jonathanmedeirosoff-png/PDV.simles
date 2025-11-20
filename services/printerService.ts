@@ -151,7 +151,7 @@ export const printTicket = async (
   // Footer
   encoder.align('center').bold(false).newline();
   encoder.text(settings.footerMessage || "Obrigado pela preferência!").newline();
-  encoder.text("EasyPOS Thermal").newline(3);
+  encoder.text("JPos Thermal").newline(3);
   encoder.cut();
 
   const data = encoder.encode();

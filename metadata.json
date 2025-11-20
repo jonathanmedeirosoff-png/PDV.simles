@@ -1,6 +1,6 @@
 {
-  "name": "EasyPOS Thermal",
-  "description": "Um sistema de PDV simples e direto para food trucks e pequenos comércios. Focado em agilidade e impressão de comprovantes não fiscais.",
+  "name": "JPos Thermal",
+  "description": "Um sistema de PDV simples e direto para food trucks e pequenos comércios. Focado em agilidade e impressão de comprovantes.",
   "requestFramePermissions": [
     "bluetooth"
   ]

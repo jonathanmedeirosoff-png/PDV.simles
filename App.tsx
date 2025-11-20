@@ -52,8 +52,8 @@ function App() {
 
   // Load settings from local storage on mount
   useEffect(() => {
-    const savedSettings = localStorage.getItem('easypos_settings');
-    const savedOrderId = localStorage.getItem('easypos_orderid');
+    const savedSettings = localStorage.getItem('jpos_settings');
+    const savedOrderId = localStorage.getItem('jpos_orderid');
     if (savedSettings) {
       setSettings({ ...DEFAULT_SETTINGS, ...JSON.parse(savedSettings) });
     } else {
@@ -66,7 +66,7 @@ function App() {
 
   const saveSettings = (newSettings: ShopSettings) => {
     setSettings(newSettings);
-    localStorage.setItem('easypos_settings', JSON.stringify(newSettings));
+    localStorage.setItem('jpos_settings', JSON.stringify(newSettings));
   };
 
   const addToCart = (e?: React.FormEvent) => {
@@ -156,7 +156,7 @@ function App() {
         setShowPreview(false);
         const nextId = currentOrderId + 1;
         setCurrentOrderId(nextId);
-        localStorage.setItem('easypos_orderid', nextId.toString());
+        localStorage.setItem('jpos_orderid', nextId.toString());
         setCart([]);
         setAiMessage(''); // Clear AI message
     }, 1000);
@@ -183,7 +183,7 @@ function App() {
         <div className="bg-slate-900 text-white p-4 flex justify-between items-center shadow-md shrink-0">
           <div className="flex items-center gap-2">
             <Store className="w-6 h-6 text-emerald-400" />
-            <h1 className="font-bold text-xl tracking-tight">EasyPOS</h1>
+            <h1 className="font-bold text-xl tracking-tight">JPos</h1>
           </div>
           <button 
             onClick={() => setIsSettingsOpen(true)}
