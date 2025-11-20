@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ShopSettings, BluetoothDevice } from '../types';
-import { Bluetooth, Store, Printer, Wifi } from 'lucide-react';
+import { Bluetooth, Store, Printer } from 'lucide-react';
 
 interface SettingsFormProps {
   settings: ShopSettings;
